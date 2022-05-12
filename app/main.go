@@ -9,7 +9,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", myHandler)
-	fmt.Println("Server rodando em :8080...")
+	fmt.Println("Server rodando em na porta 8080...")
 	http.ListenAndServe(":8080", nil)
 }
 
@@ -26,7 +26,7 @@ func myHandler(w http.ResponseWriter, r *http.Request) {
 		Echo    string `json:"echo"`
 	}{
 		Success: true,
-		Message: "Request executado com sucesso",
+		Message: "Request executado com sucesso!",
 		Echo:    string(body),
 	}
 
