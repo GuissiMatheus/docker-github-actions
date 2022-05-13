@@ -42,7 +42,7 @@ jobs:
           context: ./
           # Note: tags has to be all lower-case
           tags: |
-            guissimatheus/dockers-github-actions:latest
+            GuissiMatheus/docker-github-actions:latest
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
 
